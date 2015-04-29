@@ -165,7 +165,11 @@ class Map(object):
     def starting_room(self):
         return self.next_room(self.start_room)
 
-a_player = Player(100, 20)
-a_map = Map('loading_bay')
-a_game = Engine(a_map)
-a_game.play()
+
+def main():
+    a_player = Player(100, 20)
+    a_map = Map('loading_bay')
+    a_game = Engine(a_map)
+    a_game.play()
+
+main()
