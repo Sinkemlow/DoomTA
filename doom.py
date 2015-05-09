@@ -24,12 +24,12 @@ class Player(Character):
         
         if hit_chance >= 75:
             print "You kill your enemy in a single shot!"
-            self.ammo = self.ammo - 1
+            self.ammo -= 1
             print "The player now has %s ammo" % self.ammo
             return 'success'
         elif hit_chance < 75 and hit_chance > 50:
             print "You kill your enemy in 2 shots!"
-            self.ammo = self.ammo - 2
+            self.ammo -= 2
             print "You now have %s ammo" % self.ammo
             return 'success'
         else:
